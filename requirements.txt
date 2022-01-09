@@ -1,0 +1,13 @@
+python-vlc
+pyDes
+requests
+Pillow
+requests
+glfw
+pyyaml
+numpy
+baidu-aip
+pyaudio
+PyOpenGL
+psd-tool
+urllib
