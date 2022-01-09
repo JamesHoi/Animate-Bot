@@ -11,4 +11,4 @@ render: 渲染机器人形象，当说话时摇头
 
 ## 效果
 
-![image-20220110015810429](D:\WorkSpace\Python\Animate-Bot\img\image-20220110015810429.png)
+![image-20220110015810429](https://raw.githubusercontent.com/JamesHoi/Animate-Bot/main/img/image-20220110015810429.png)
