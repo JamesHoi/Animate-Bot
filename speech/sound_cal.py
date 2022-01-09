@@ -10,7 +10,7 @@ SAMP_TIME = 0.5
 
 # 标定
 # 要写入的文件名
-WAVE_OUTPUT_FILENAME = "speech/audio/calibration.wav"
+WAVE_OUTPUT_FILENAME = "speech/audio/calibration.pcm"
 # 标定录音时间
 RECORD_SECONDS = 5
 
@@ -41,7 +41,7 @@ def calibrate(sensitivity):
         print("未找到标定音频，请保持周围声音正常且在{}秒内随意说一段话".format(RECORD_SECONDS))
         wave_data = get_recordFrames(RECORD_SECONDS)
     # 转换语音数据格式
-    wave_data = np.fromstring(wave_data, dtype=np.float)
+    wave_data = np.fromstring(wave_data, dtype=np.short)
     # 记录语音，每次打开只需输入灵敏度
     save_recordFrames(WAVE_OUTPUT_FILENAME, wave_data)
     # 归一化

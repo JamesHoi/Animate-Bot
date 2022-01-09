@@ -4,9 +4,9 @@ import wave
 # 录音参数
 # 定义数据流块
 CHUNK = 2000#1024
-FORMAT = pyaudio.paFloat32
-CHANNELS = 2
-RATE = 32000
+FORMAT = pyaudio.paInt16
+CHANNELS = 1#2
+RATE = 16000
 
 def get_recordFrames(seconds,FORMAT=FORMAT):
     p = pyaudio.PyAudio()

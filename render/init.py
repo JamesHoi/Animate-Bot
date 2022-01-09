@@ -71,8 +71,8 @@ def opengl_init(size):
 
 
 def render_init(all_layers):
-    # SIZE = 512, 512
-    SIZE = 1024, 1024
+    SIZE = 512, 512
+    # SIZE = 1024, 1024
     window = opengl_init(SIZE)
     add_texture(all_layers)
     add_depth_data(all_layers)

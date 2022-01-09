@@ -18,11 +18,9 @@ def talk_loop():
         print("[INFO]机器人的回答:", text)
         audio_path = get_tts_audio(text)
 
-        '''
         # 输出音频并令人物摇头
-        animate.IS_MOVING = True
+        #animate.IS_MOVING = True
         p = playsound()
         p.play(audio_path)
         p.close()
-        animate.IS_MOVING = False
-        '''
+        #animate.IS_MOVING = False
